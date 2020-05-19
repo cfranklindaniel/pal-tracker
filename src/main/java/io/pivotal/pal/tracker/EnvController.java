@@ -30,9 +30,9 @@ public class EnvController {
         Map<String, String> env = new HashMap<String, String>();
 
         env.put("PORT", this.port);
-        env.put("MEMORY_LIMIT", this.port);
-        env.put("CF_INSTANCE_INDEX", this.port);
-        env.put("CF_INSTANCE_ADDR", this.port);
+        env.put("MEMORY_LIMIT", this.memoryLimit);
+        env.put("CF_INSTANCE_INDEX", this.cfInstanceIndex);
+        env.put("CF_INSTANCE_ADDR", this.cfInstanceAddr);
 
         return env;
     }
